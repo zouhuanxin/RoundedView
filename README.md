@@ -26,8 +26,8 @@
 |RoundedView| ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ### 属性
-> rRadius
-> rLeftRadius
+> rRadius <br />
+> rLeftRadius <br />
 > rRightRadius
 > rTopRadius
 > rBottomRadius
