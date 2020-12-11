@@ -16,12 +16,12 @@
  
 | 名称 | 圆角 | 线性渐变 | 高斯模糊 | 边框颜色 | 自定义路径裁剪 |
 | :-----| :-----| :-----| :-----| :-----| :-----| 
-｜RoundedButton｜✅｜✅｜✅｜✅｜✅｜
-｜RoundedEditText｜✅｜❌｜❌｜✅｜✅｜
-｜RoundedFrameLayout｜✅｜✅｜✅｜✅｜✅｜
-｜RoundedImageView｜✅｜✅｜✅｜✅｜✅｜
-｜RoundedLinearLayout｜✅｜✅｜✅｜✅｜✅｜
-｜RoundedRelativeLayout｜✅｜✅｜✅｜✅｜✅｜
-｜RoundedTextView｜✅｜✅｜✅｜✅｜✅｜
-｜RoundedView｜✅｜✅｜✅｜✅｜✅｜
+| RoundedButton | ✅ | ✅ | ✅ | ✅ | ✅ |
+|RoundedEditText| ✅ | ❌ | ❌ | ✅ | ✅ |
+|RoundedFrameLayout| ✅ | ✅ | ✅ | ✅ | ✅ |
+|RoundedImageView| ✅ | ✅ | ✅ | ✅ | ✅ |
+|RoundedLinearLayout| ✅ | ✅ | ✅ | ✅ | ✅ |
+|RoundedRelativeLayout| ✅ | ✅ | ✅ | ✅ | ✅ |
+|RoundedTextView| ✅ | ✅ | ✅ | ✅ | ✅ |
+|RoundedView| ✅ | ✅ | ✅ | ✅ | ✅ |
 
