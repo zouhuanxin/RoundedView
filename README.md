@@ -77,6 +77,15 @@ Add the dependency
 >  app:lineargradientDirectionType="b" //方向 <br />
 >  app:lineargradientColor="#ff0000-#cccccc-#4678ff" //颜色 多种颜色用 - 符号隔开 <br />
 >  app:lineargradientWeight="0.2-0.3-0.7" //每种颜色权重
+2. 高斯模糊blur取值范围
+> 0 < num <= 25 之间 数值越大约模糊
+3. 渐变方向声明
+ * 线性方向 默认从上至下
+ * a 从上到下
+ * b 从左到右
+ * c 从左上角到右下角
+ * d 从右上角到左下角
+>  app:lineargradientDirectionType="b" //方向 <br />
 
 ### 注意
 ### 示例图
