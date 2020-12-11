@@ -57,3 +57,9 @@
 > setStrokeColor(int color) <br />
 > setBlur(int num) <br />
 > setTargetBitmap(Bitmap bitmap)
+
+### 示例图
+![示例图](http://zhx02.run8.top/2020/12/11/0d7a41b34039e69280efa3b02b367170.png)
+
+
+
