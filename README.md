@@ -28,32 +28,32 @@
 ### 属性
 > rRadius <br />
 > rLeftRadius <br />
-> rRightRadius
-> rTopRadius
-> rBottomRadius
-> rTopLeftRadius
-> rTopRightRadius
-> rBottomLeftRadius
-> rBottomRightRadius
-> rStrokeWidth
-> rStrokeColor
-> blur
-> lineargradientColor
-> lineargradientWeight
+> rRightRadius <br />
+> rTopRadius <br />
+> rBottomRadius <br />
+> rTopLeftRadius <br />
+> rTopRightRadius <br />
+> rBottomLeftRadius <br />
+> rBottomRightRadius <br />
+> rStrokeWidth <br />
+> rStrokeColor <br />
+> blur <br />
+> lineargradientColor <br />
+> lineargradientWeight <br />
 > lineargradientDirectionType
 
 ### 方法
-> setRadius(float radiusDp)
-> setRadius(float radiusTopLeftDp, float radiusTopRightDp, float radiusBottomLeftDp, float radiusBottomRightDp)
-> setRadiusLeft(float radiusDp)
-> setRadiusRight(float radiusDp)
-> setRadiusTop(float radiusDp)
-> setRadiusBottom(float radiusDp)
-> setRadiusTopLeft(float radiusDp)
-> setRadiusTopRight(float radiusDp)
-> setRadiusBottomLeft(float radiusDp)
-> setRadiusBottomRight(float radiusDp)
-> setStrokeWidth(float widthDp)
-> setStrokeColor(int color)
-> setBlur(int num)
+> setRadius(float radiusDp) <br />
+> setRadius(float radiusTopLeftDp, float radiusTopRightDp, float radiusBottomLeftDp, float radiusBottomRightDp) <br />
+> setRadiusLeft(float radiusDp) <br />
+> setRadiusRight(float radiusDp) <br />
+> setRadiusTop(float radiusDp) <br />
+> setRadiusBottom(float radiusDp) <br />
+> setRadiusTopLeft(float radiusDp) <br />
+> setRadiusTopRight(float radiusDp) <br />
+> setRadiusBottomLeft(float radiusDp) <br />
+> setRadiusBottomRight(float radiusDp) <br />
+> setStrokeWidth(float widthDp) <br />
+> setStrokeColor(int color) <br />
+> setBlur(int num) <br />
 > setTargetBitmap(Bitmap bitmap)
