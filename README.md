@@ -72,6 +72,13 @@ Add the dependency
 > setBlur(int num) <br />
 > setTargetBitmap(Bitmap bitmap)
 
+### 注意
+1. 渐变颜色（lineargradientColor）和渐变比重设置方法（lineargradientWeight）
+>  app:lineargradientDirectionType="b" //方向 <br />
+>  app:lineargradientColor="#ff0000-#cccccc-#4678ff" //颜色 多种颜色用 - 符号隔开 <br />
+>  app:lineargradientWeight="0.2-0.3-0.7" //每种颜色权重
+
+### 注意
 ### 示例图
 ![示例图](http://zhx02.run8.top/2020/12/11/0d7a41b34039e69280efa3b02b367170.png)
 
