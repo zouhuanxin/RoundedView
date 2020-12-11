@@ -25,3 +25,35 @@
 |RoundedTextView| ✅ | ✅ | ✅ | ✅ | ✅ |
 |RoundedView| ✅ | ✅ | ✅ | ✅ | ✅ |
 
+### 属性
+> rRadius
+> rLeftRadius
+> rRightRadius
+> rTopRadius
+> rBottomRadius
+> rTopLeftRadius
+> rTopRightRadius
+> rBottomLeftRadius
+> rBottomRightRadius
+> rStrokeWidth
+> rStrokeColor
+> blur
+> lineargradientColor
+> lineargradientWeight
+> lineargradientDirectionType
+
+### 方法
+> setRadius(float radiusDp)
+> setRadius(float radiusTopLeftDp, float radiusTopRightDp, float radiusBottomLeftDp, float radiusBottomRightDp)
+> setRadiusLeft(float radiusDp)
+> setRadiusRight(float radiusDp)
+> setRadiusTop(float radiusDp)
+> setRadiusBottom(float radiusDp)
+> setRadiusTopLeft(float radiusDp)
+> setRadiusTopRight(float radiusDp)
+> setRadiusBottomLeft(float radiusDp)
+> setRadiusBottomRight(float radiusDp)
+> setStrokeWidth(float widthDp)
+> setStrokeColor(int color)
+> setBlur(int num)
+> setTargetBitmap(Bitmap bitmap)
