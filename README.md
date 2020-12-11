@@ -1,7 +1,21 @@
 # RoundedView
 安卓圆角库,各种基本控件上的圆角。
 
-目前支持的基础控件
+### 引入
+Add it in your root build.gradle at the end of repositories:
+> allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ 
+Add the dependency
+> dependencies {
+	        implementation 'com.github.zouhuanxin:RoundedView:1.0'
+	}
+
+### 目前支持的基础控件
  1. RoundedButton
  2. RoundedEditText
  3. RoundedFrameLayout
