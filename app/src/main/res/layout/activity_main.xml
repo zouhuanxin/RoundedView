@@ -11,7 +11,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
         <com.zhx.myrounded.RoundedEditText
-            android:id="@+id/group1"
             android:textStyle="bold"
             android:textColor="#000000"
             android:padding="10dp"
@@ -74,6 +73,15 @@
                 app:rRadius="1000dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </com.zhx.myrounded.RoundedImageView>
+            <com.zhx.myrounded.RoundedImageView
+                android:id="@+id/image1"
+                android:layout_margin="10dp"
+                app:rRadius="1000dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image1"
                 android:layout_width="100dp"
                 android:layout_height="100dp">
             </com.zhx.myrounded.RoundedImageView>

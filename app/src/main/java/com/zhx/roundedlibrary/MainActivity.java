@@ -7,17 +7,18 @@ import android.graphics.Paint;
 import android.graphics.Path;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.zhx.myrounded.RoundedImageView;
 import com.zhx.myrounded.RoundedLinearLayout;
+import com.zhx.myrounded.util.DensityUtil;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RoundedLinearLayout group1;
+    private RoundedImageView image1;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -29,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private void initView() {
-        //group1 = (RoundedLinearLayout) findViewById(R.id.group1);
-        //group1.setTargetBitmap(getBitmapHeart(1000,1000));
+        image1 = (RoundedImageView) findViewById(R.id.image1);
+        image1.setTargetBitmap(getBitmapHeart(DensityUtil.dip2px(this,100),DensityUtil.dip2px(this,100)));
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private Bitmap getBitmapHeart(int width, int height) {
-        Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
+    private Bitmap getBitmapHeart(float width, float height) {
+        Bitmap bitmap = Bitmap.createBitmap((int) width, (int) height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.BLACK);
