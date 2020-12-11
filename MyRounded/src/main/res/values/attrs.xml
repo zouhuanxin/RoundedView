@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="rRadius" format="dimension" />
+    <attr name="rLeftRadius" format="dimension" />
+    <attr name="rRightRadius" format="dimension" />
+    <attr name="rTopRadius" format="dimension" />
+    <attr name="rBottomRadius" format="dimension" />
+    <attr name="rTopLeftRadius" format="dimension" />
+    <attr name="rTopRightRadius" format="dimension" />
+    <attr name="rBottomLeftRadius" format="dimension" />
+    <attr name="rBottomRightRadius" format="dimension" />
+    <attr name="rStrokeWidth" format="dimension" />
+    <attr name="rStrokeColor" format="color" />
+    <attr name="blur" format="integer"/>
+    <attr name="lineargradientColor" format="string" />
+    <attr name="lineargradientWeight" format="string"/>
+    <attr name="lineargradientDirectionType" format="enum">
+        <enum name="a" value="0"/>
+        <enum name="b" value="1"/>
+        <enum name="c" value="2"/>
+        <enum name="d" value="3"/>
+    </attr>
+
+
+    <declare-styleable name="RoundCorner">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <!--
+     作用：代码提示
+     1.RoundLinearLayout
+     2.RoundRelativeLayout
+     3.RoundFrameLayout
+     4.RoundImageView
+     5.RoundTextView
+     6.RoundView
+     7.RoundButton
+     -->
+
+    <declare-styleable name="RoundedLinearLayout">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedRelativeLayout">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedFrameLayout">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedTextView">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedView">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedButton">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedEditText">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+    </declare-styleable>
+
+</resources>

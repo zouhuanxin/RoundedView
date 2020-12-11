@@ -1,18 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.zhx.myrounded.RoundedEditText
+            android:id="@+id/group1"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:gravity="center|left"
+            android:text="RoundedLibrary"
+            app:rRadius="20dp"
+            app:rStrokeColor="#333333"
+            app:rStrokeWidth="1dp"
+            android:layout_margin="10dp"
+            android:background="#f1f1f1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </com.zhx.myrounded.RoundedEditText>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.zhx.myrounded.RoundedButton
+            android:layout_margin="10dp"
+            app:rRadius="100dp"
+            android:gravity="center"
+            android:background="#478"
+            android:text="RoundedLibrary"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        </com.zhx.myrounded.RoundedButton>
+
+        <com.zhx.myrounded.RoundedFrameLayout
+            app:lineargradientDirectionType="b"
+            app:lineargradientColor="#ff0000-#cccccc-#4678ff"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        </com.zhx.myrounded.RoundedFrameLayout>
+
+        <com.zhx.myrounded.RoundedTextView
+            android:text="RoundedLibrary"
+            android:textColor="#ffffff"
+            android:background="@drawable/image4"
+            app:blur="10"
+            android:gravity="center"
+            app:rRadius="100dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+        </com.zhx.myrounded.RoundedTextView>
+
+        <com.zhx.myrounded.RoundedLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.zhx.myrounded.RoundedImageView
+                android:layout_margin="10dp"
+                app:rRadius="1000dp"
+                app:blur="10"
+                android:scaleType="fitXY"
+                android:src="@drawable/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </com.zhx.myrounded.RoundedImageView>
+            <com.zhx.myrounded.RoundedImageView
+                android:layout_margin="10dp"
+                app:rRadius="1000dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </com.zhx.myrounded.RoundedImageView>
+        </com.zhx.myrounded.RoundedLinearLayout>
+    </LinearLayout>
+
+</ScrollView>
