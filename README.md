@@ -1,5 +1,6 @@
 # RoundedView
 安卓圆角库,各种基本控件上的圆角。
+所有默认样式都已经重置，比如如果你使用了RoundedEditText控件，请给它赋予默认样式，否则可能会出现一些与你预想中偏差的效果。
 
 ### 引入
 Add it in your root build.gradle at the end of repositories:
