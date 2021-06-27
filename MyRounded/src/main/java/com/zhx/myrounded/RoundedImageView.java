@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -19,14 +20,14 @@ import com.zhx.myrounded.util.RoundMethodInterface;
  * 3.支持背景高斯模糊 ✅
  * 4.支持边框颜色 ✅
  * 5.支持自定义路径裁剪 ✅ （不支持xml属性定义）
- *
+ * <p>
  * ps:
- *  线性背景开启时不允许开启 高斯模糊失效 背景图片设置失效 边框失效
- *
- *  getBackground 失效 替换成 getDrawable
- *
+ * 线性背景开启时不允许开启 高斯模糊失效 背景图片设置失效 边框失效
+ * <p>
+ * getBackground 失效 替换成 getDrawable
  */
 public class RoundedImageView extends androidx.appcompat.widget.AppCompatImageView implements RoundMethodInterface {
+    private static final String TAG = "RoundedImageView";
     private RoundHelper mHelper = new RoundHelper();
     private Context context;
     private AttributeSet attributeSet;
@@ -36,11 +37,11 @@ public class RoundedImageView extends androidx.appcompat.widget.AppCompatImageVi
     }
 
     public RoundedImageView(Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs,-1);
+        this(context, attrs, -1);
     }
 
-    public RoundedImageView(Context context, @Nullable AttributeSet attrs,int defStyleAttr) {
-        super(context, attrs,defStyleAttr);
+    public RoundedImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
         if (this.context == null) {
             this.context = context;
         }
@@ -51,7 +52,18 @@ public class RoundedImageView extends androidx.appcompat.widget.AppCompatImageVi
     }
 
     private void init() {
-        mHelper.init(context, attributeSet, this, getDrawable());
+        /**
+         * 权重
+         * src 大于 background
+         * 如果src存在则background失效
+         */
+        if (getDrawable() != null) {
+            mHelper.init(context, attributeSet, this, getDrawable());
+        } else if (getBackground() != null) {
+            mHelper.init(context, attributeSet, this, getBackground());
+        } else {
+            Log.i(TAG,"src和background属性均为设置");
+        }
     }
 
     @Override

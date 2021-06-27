@@ -28,6 +28,9 @@ import android.view.ViewGroup;
 
 import com.zhx.myrounded.R;
 
+/**
+ * 加入抗锯齿属性设置
+ */
 public class RoundHelper {
     private Context mContext;
     private View mView;
@@ -77,7 +80,8 @@ public class RoundHelper {
         mContext = context;
         mView = view;
         mDrawable = drawable;
-        mPaint = new Paint();
+        //加入抗锯齿设置
+        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mXfermode = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
 
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.RoundCorner);
@@ -243,6 +247,7 @@ public class RoundHelper {
         Bitmap bitmap = Bitmap.createBitmap(mWidth, mHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         Paint paint = new Paint();
+        paint.setAntiAlias(true);
         Path path = new Path();
         RectF rectF = new RectF(0, 0, mWidth, mHeight);
         path.addRoundRect(rectF, RadiusaRcs, Path.Direction.CCW);
@@ -255,6 +260,7 @@ public class RoundHelper {
         Bitmap bitmap = Bitmap.createBitmap(mWidth, mHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         Paint paint = new Paint();
+        paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(mStrokeColor);
         paint.setStrokeWidth(mStrokeWidth);

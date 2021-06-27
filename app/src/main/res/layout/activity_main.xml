@@ -47,7 +47,7 @@
             android:text="RoundedLibrary"
             android:textColor="#ffffff"
             android:background="@drawable/image4"
-            app:blur="10"
+            app:blur="25"
             android:gravity="center"
             app:rRadius="100dp"
             android:layout_margin="10dp"
@@ -62,7 +62,7 @@
             <com.zhx.myrounded.RoundedImageView
                 android:layout_margin="10dp"
                 app:rRadius="1000dp"
-                app:blur="10"
+                app:blur="25"
                 android:scaleType="fitXY"
                 android:src="@drawable/image2"
                 android:layout_width="100dp"
