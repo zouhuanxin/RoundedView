@@ -16,6 +16,9 @@ import com.zhx.myrounded.RoundedImageView;
 import com.zhx.myrounded.RoundedLinearLayout;
 import com.zhx.myrounded.util.DensityUtil;
 
+/**
+ *
+ */
 public class MainActivity extends AppCompatActivity {
 
     private RoundedImageView image1;
