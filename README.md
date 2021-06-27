@@ -13,7 +13,7 @@ Add it in your root build.gradle at the end of repositories:
  
 Add the dependency
 > dependencies {
-	        implementation 'com.github.zouhuanxin:RoundedView:1.0'
+	        implementation 'com.github.zouhuanxin:RoundedView:1.1'
 	}
 
 ### 目前支持的基础控件
