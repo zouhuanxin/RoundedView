@@ -14,7 +14,7 @@ import com.zhx.myrounded.util.RoundMethodInterface;
  * 圆角线性布局
  * 1.支持四个方向圆角 ✅
  * 2.支持边框颜色 ✅
- * 3.支持自定义路径裁剪 ✅ （不支持xml属性定义）
+ * 3.支持自定义路径裁剪 ✅（不支持xml属性定义）
  *
  */
 public class RoundedEditText extends androidx.appcompat.widget.AppCompatEditText implements RoundMethodInterface {

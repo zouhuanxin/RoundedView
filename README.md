@@ -73,7 +73,7 @@ Add the dependency
 > setBlur(int num) <br />
 > setTargetBitmap(Bitmap bitmap) <br />
 > setImage 方法是RoundImageView独有其它控件没有此方法，如果需要在代码中进行图片的加载调用此方法进行图片的加载，如果需要加载网络图片可以直接使用gilde进行图片的加载，然后再配合需要的高斯模糊或者其它处理，针对gilde网络图片的异步加载问题已经处理完毕，不需要再做其它处理 <br />
-> setImage(int resId)
+> setImage(int resId) <br />
 > setImage(Drawable drawable)
 
 ### 注意
