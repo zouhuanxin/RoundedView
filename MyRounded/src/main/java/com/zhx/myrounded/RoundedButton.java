@@ -21,7 +21,7 @@ import com.zhx.myrounded.util.RoundMethodInterface;
  * 5.支持自定义路径裁剪 ✅ （不支持xml属性定义）
  *
  * ps:
- *  线性背景开启时不允许开启 高斯模糊失效 背景图片设置失效 边框失效
+ *  线性背景开启时不允许开启，高斯模糊失效，背景图片设置失效，边框失效
  *
  */
 public class RoundedButton extends androidx.appcompat.widget.AppCompatButton implements RoundMethodInterface {
