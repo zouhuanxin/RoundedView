@@ -124,7 +124,7 @@ public class RoundHelper {
             throw new IndexOutOfBoundsException("颜色组和权重组长度不匹配");
         }
 
-        linearGradientDirectionType = array.getInteger(R.styleable.RoundedLinearLayout_lineargradientDirectionType,0);
+        linearGradientDirectionType = array.getInteger(R.styleable.RoundedLinearLayout_lineargradientDirectionType, 0);
 
         setData();
         array.recycle();
@@ -167,6 +167,9 @@ public class RoundHelper {
 
     public void drawPath(Canvas canvas) {
         // restart draw backgroup or image
+        if (mPaint == null) {
+            return;
+        }
         canvas.save();
         if (colors != null && colors.length > 0) {
             int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
@@ -224,6 +227,10 @@ public class RoundHelper {
         this.weights = weights;
     }
 
+    public void setmDrawable(Drawable mDrawable) {
+        this.mDrawable = mDrawable;
+    }
+
     public void setBlur(int num) {
         if (num < 1 || num > 25) {
             return;
@@ -231,6 +238,7 @@ public class RoundHelper {
         if (colors != null && colors.length > 0) {
             return;
         }
+        System.out.println("mDrawable:"+mDrawable);
         if (mDrawable != null && mDrawable instanceof BitmapDrawable) {
             BlurNum = num;
             BitmapDrawable bitmapDrawable = (BitmapDrawable) mDrawable;
@@ -246,7 +254,7 @@ public class RoundHelper {
     private Bitmap getTargetRadiusBitmap() {
         Bitmap bitmap = Bitmap.createBitmap(mWidth, mHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
-        Paint paint = new Paint();
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setAntiAlias(true);
         Path path = new Path();
         RectF rectF = new RectF(0, 0, mWidth, mHeight);
@@ -259,7 +267,7 @@ public class RoundHelper {
     private Bitmap getTargetStokeBitmap() {
         Bitmap bitmap = Bitmap.createBitmap(mWidth, mHeight, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
-        Paint paint = new Paint();
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setAntiAlias(true);
         paint.setStyle(Paint.Style.STROKE);
         paint.setColor(mStrokeColor);
@@ -298,6 +306,8 @@ public class RoundHelper {
             blur.setRadius(radius);
             blur.forEach(output);
             output.copyTo(bitmap);
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             if (rs != null) {
                 rs.destroy();

@@ -3,6 +3,7 @@ package com.zhx.myrounded;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.ImageView;
@@ -62,7 +63,8 @@ public class RoundedImageView extends androidx.appcompat.widget.AppCompatImageVi
         } else if (getBackground() != null) {
             mHelper.init(context, attributeSet, this, getBackground());
         } else {
-            Log.i(TAG,"src和background属性均为设置");
+            mHelper.init(context, attributeSet, this, null);
+            Log.e(TAG, "src和background属性均为设置");
         }
     }
 
@@ -137,6 +139,26 @@ public class RoundedImageView extends androidx.appcompat.widget.AppCompatImageVi
     @Override
     public void setStrokeColor(int color) {
         mHelper.setStrokeColor(color);
+    }
+
+    //提供的图片加载方法
+    public void setImage(Object resid) {
+        if (resid instanceof Integer) {
+            setImageResource((Integer) resid);
+            mHelper.setmDrawable(getDrawable());
+        } else {
+            setBackground((Drawable) resid);
+            mHelper.setmDrawable((Drawable) resid);
+        }
+    }
+
+    //gilde方法会调用此方法来加载图片
+    @Override
+    public void setImageDrawable(@Nullable Drawable drawable) {
+        super.setImageDrawable(drawable);
+        if (drawable != null && mHelper != null) {
+            mHelper.setmDrawable(drawable);
+        }
     }
 
     @Override

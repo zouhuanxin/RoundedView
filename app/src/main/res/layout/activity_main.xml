@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <com.zhx.myrounded.RoundedEditText
             android:textStyle="bold"
             android:textColor="#000000"
@@ -82,6 +83,21 @@
                 app:rRadius="1000dp"
                 android:scaleType="fitXY"
                 android:src="@drawable/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+            </com.zhx.myrounded.RoundedImageView>
+        </com.zhx.myrounded.RoundedLinearLayout>
+
+        <com.zhx.myrounded.RoundedLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.zhx.myrounded.RoundedImageView
+                android:id="@+id/image2"
+                android:layout_margin="10dp"
+                app:rRadius="1000dp"
+                app:blur="25"
+                android:scaleType="fitXY"
                 android:layout_width="100dp"
                 android:layout_height="100dp">
             </com.zhx.myrounded.RoundedImageView>
