@@ -13,7 +13,7 @@ Add it in your root build.gradle at the end of repositories:
  
 Add the dependency
 > dependencies {
-	        implementation 'com.github.zouhuanxin:RoundedView:1.1'
+	        implementation 'com.github.zouhuanxin:RoundedView:1.2'
 	}
 
 ### 目前支持的基础控件
@@ -71,7 +71,10 @@ Add the dependency
 > setStrokeWidth(float widthDp) <br />
 > setStrokeColor(int color) <br />
 > setBlur(int num) <br />
-> setTargetBitmap(Bitmap bitmap)
+> setTargetBitmap(Bitmap bitmap) <br />
+> setImage 方法是RoundImageView独有其它控件没有此方法，如果需要在代码中进行图片的加载调用此方法进行图片的加载，如果需要加载网络图片可以直接使用gilde进行图片的加载，然后再配合需要的高斯模糊或者其它处理，针对gilde网络图片的异步加载问题已经处理完毕，不需要再做其它处理
+> setImage(int resId)
+> setImage(Drawable drawable)
 
 ### 注意
 1. 渐变颜色（lineargradientColor）和渐变比重设置方法（lineargradientWeight）
